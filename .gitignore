@@ -1,0 +1,19 @@
+cat <<EOF > .gitignore
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Build outputs
+client/dist/
+server/dist/
+
+# Environment variables (Critical for security)
+.env
+.env.local
+.env.*.local
+
+# IDE and OS files
+.vscode/
+.DS_Store
+EOF
