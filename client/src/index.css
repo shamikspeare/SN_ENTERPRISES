@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@theme {
+    --color-brand-bg: #E5E5CB;
+    --color-brand-cream: #D5CEA3;
+    --color-brand-brown: #635454;
+    --color-brand-dark: #3C2A21;
+}
+
+@layer base {
+    body {
+        @apply bg-brand-bg/20;
+        min-height: 100vh;
+    }
+}

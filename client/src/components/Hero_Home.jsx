@@ -1,0 +1,37 @@
+import React from 'react';
+import heroShoe from '../assets/hero_shoe.png';
+
+const Hero_Home = () => {
+    return (
+        <section className="min-h-[100vh] grid grid-cols-1 md:grid-cols-2 items-center px-6 md:px-12 py-12 gap-8">
+            {/* Left Column: Text Content */}
+            <div className="flex flex-col items-start space-y-8 ml-16">
+                <h1 className="text-5xl md:text-7xl font-bold text-brand-dark leading-tight">
+                    Step Into <br />
+                    <span className="text-brand-brown">Style & Comfort</span>
+                </h1>
+                <p className="text-lg text-brand-brown/80 max-w-md">
+                    Discover the perfect blend of fashion and function.
+                    Our latest collection brings you premium footwear designed for everyday elegance.
+                </p>
+                <button className="px-8 py-3 bg-brand-dark text-white font-medium rounded-full hover:bg-brand-brown transition-colors duration-300 shadow-lg">
+                    Shop Now
+                </button>
+            </div>
+
+            {/* Right Column: Image */}
+            <div className="flex justify-center items-center relative">
+                {/* Decorative Circle Background (Optional) */}
+                <div className="absolute w-[90%] h-[90%] bg-brand-cream/20 rounded-full -z-10 blur-3xl"></div>
+
+                <img
+                    src={heroShoe}
+                    alt="Premium Shoe"
+                    className="w-full max-w-2xl object-contain drop-shadow-2xl"
+                />
+            </div>
+        </section>
+    );
+};
+
+export default Hero_Home;
