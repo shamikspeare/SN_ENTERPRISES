@@ -21,14 +21,18 @@ const Hero_Home = () => {
 
             {/* Right Column: Image */}
             <div className="flex justify-center items-center relative">
-                {/* Decorative Circle Background (Optional) */}
+                {/* Decorative Circle Background */}
                 <div className="absolute w-[90%] h-[90%] bg-brand-cream/20 rounded-full -z-10 blur-3xl"></div>
 
-                <img
-                    src={heroShoe}
-                    alt="Premium Shoe"
-                    className="w-full max-w-2xl object-contain drop-shadow-2xl"
-                />
+                <div className="flex flex-col items-center mr-16 relative">
+                    <img
+                        src={heroShoe}
+                        alt="Premium Shoe"
+                        className="w-full max-w-xl object-contain drop-shadow-2xl relative z-10"
+                    />
+                    {/* Elliptical Shadow */}
+                    <div className="w-[80%] h-8 bg-black/40 blur-2xl rounded-[100%] -mt-12 z-0"></div>
+                </div>
             </div>
         </section>
     );

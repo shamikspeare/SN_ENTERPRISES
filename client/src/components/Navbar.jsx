@@ -45,9 +45,9 @@ const Navbar = () => {
             {/* Right Side Buttons */}
             <div className="flex-1 flex items-center justify-end space-x-3">
                 <NavbarButton Icon={Search} />
-                <NavbarButton Icon={Heart} />
-                <NavbarButton Icon={ShoppingCart} />
-                <NavbarButton Icon={User} />
+                <NavbarButton Icon={Heart} path="/wishlist" />
+                <NavbarButton Icon={ShoppingCart} path="/cart" />
+                <NavbarButton Icon={User} path="/profile" />
             </div>
         </div>
     );
