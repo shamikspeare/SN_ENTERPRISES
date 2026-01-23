@@ -4,7 +4,7 @@ const AboutPage = () => {
     return (
         <div className="min-h-screen relative overflow-hidden">
             {/* Decorative Circle - Top Right */}
-            <div className="absolute -top-[400px] -right-[300px] w-[1000px] h-[1000px] bg-brand-brown rounded-full -z-10 opacity-90"></div>
+            <div className="absolute -top-[200px] -right-[150px] md:-top-[400px] md:-right-[300px] w-[500px] h-[500px] md:w-[1000px] md:h-[1000px] bg-brand-brown rounded-full -z-10 opacity-90 blur-3xl md:blur-0"></div>
 
             <div className="container mx-auto px-6 py-16 relative z-10 flex flex-col items-center">
 

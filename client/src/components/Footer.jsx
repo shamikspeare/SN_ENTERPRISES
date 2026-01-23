@@ -21,7 +21,7 @@ const Footer = () => {
                 </div>
 
                 {/* Column 2: Links Grid (4 Sub-columns) */}
-                <div className='grid grid-cols-2 sm:grid-cols-4 gap-6 md:gap-8'>
+                <div className='grid grid-cols-2 md:grid-cols-4 gap-x-4 gap-y-8 w-full md:w-auto'>
                     {/* Discover */}
                     <div className='flex flex-col gap-4'>
                         <h3 className='font-bold text-brand-light uppercase tracking-widest'>Discover</h3>
